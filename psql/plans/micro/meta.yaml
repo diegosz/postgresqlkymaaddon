@@ -1,0 +1,6 @@
+name: micro
+id: b2257daa-0e26-4c61-a68d-8a7453c1b768
+description: "Postgres micro plan ."
+displayName: Micro
+
+bindable: true

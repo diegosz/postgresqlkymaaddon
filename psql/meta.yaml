@@ -1,0 +1,12 @@
+name: postgres
+version: 0.0.1
+id: b2257daa-0e26-4c61-a68d-8a7453c1b768
+description: "[Experimental] Posrgres, no uses esto para produccion"
+displayName: "[Experimental] Postgres"
+
+tags: database, experimental
+labels:
+  experimental: "true"
+providerDisplayName: martinadolfi
+longDescription: "[Experimental] Posgres, no uses esto en produccion"
+bindable: true
