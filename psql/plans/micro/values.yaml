@@ -1,9 +1,19 @@
-## Configure resource requests and limits
-## ref: http://kubernetes.io/docs/user-guide/compute-resources/
-##
-resources:
-  requests:
-    memory: 96Mi
+image:
+  tag: latest-pg11
+  repository: timescale/timescaledb
 
-persistence:
-  enabled: false
+postgresqlPassword: mipass
+
+postgresqlUsername: postgres
+
+postgresDatabase: postgres
+
+securityContext:
+  fsGroup: "70"
+  runAsUser: "70"
+
+metrics:
+  enabled: true
+
+service:
+  type: LoadBalancer

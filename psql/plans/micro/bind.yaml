@@ -1,15 +1,10 @@
 credential:
   - name: HOST
-    value: {{ template "redis.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local
+    value: {{ template "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local
   - name: PORT
-    valueFrom:
-      serviceRef:
-        name: {{ template "redis.fullname" . }}
-        jsonpath: '{ .spec.ports[?(@.name=="redis")].port }'
-{{- if .Values.usePassword }}
-  - name: REDIS_PASSWORD
+    value: {{ template "postgresql.port" . }}
+  - name: POSTGRES_ADMIN_PASSWORD
     valueFrom:
       secretKeyRef:
-        name: {{ template "redis.fullname" . }}
-        key: redis-password
-{{- end }}
+        name: {{ template "postgresql.secretName" . }}
+        jsonpath: '{.data.postgresql-password}'
