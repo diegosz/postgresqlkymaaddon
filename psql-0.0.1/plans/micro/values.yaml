@@ -458,7 +458,7 @@ securityContext:
   runAsUser: "70"
 
 metrics:
-  enabled: true
+  enabled: false
 
 service:
   type: LoadBalancer
