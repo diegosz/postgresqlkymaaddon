@@ -1,6 +1,6 @@
 apiVersion: v1
 entries:
-  psql-service-broker:
+  psql:
     - name: psql
       description: "Postgres"
       version: 0.0.1
