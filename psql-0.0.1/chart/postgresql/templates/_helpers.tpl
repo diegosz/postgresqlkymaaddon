@@ -380,8 +380,8 @@ Return the appropriate apiVersion for statefulset.
 {{- else -}}
 {{- print "apps/v1" -}}
 {{- end -}}
-*/}}
 {{- end -}}
+*/}}
 
 {{/*
 Compile all warnings into a single message, and call fail.
