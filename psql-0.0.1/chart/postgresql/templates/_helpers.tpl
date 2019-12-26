@@ -372,6 +372,7 @@ Usage:
 
 {{- define "postgresql.statefulset.apiVersion" -}}
 {{- print "apps/v1beta2" -}}
+{{- end -}}
 {{/*
 Return the appropriate apiVersion for statefulset.
 {{- define "postgresql.statefulset.apiVersion" -}}
