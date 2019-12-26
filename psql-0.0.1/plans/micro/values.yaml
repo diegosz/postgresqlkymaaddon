@@ -6,7 +6,7 @@ postgresqlPassword: mipass
 
 postgresqlUsername: postgres
 
-postgresDatabase: postgres
+postgresqlDatabase: postgres
 
 securityContext:
   fsGroup: "70"
