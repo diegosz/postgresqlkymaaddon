@@ -2,8 +2,6 @@ apiVersion: addons.kyma-project.io/v1alpha1
 kind: ClusterAddonsConfiguration
 metadata:
   name: psql
-  finalizers:
-    - addons.kyma-project.io
 spec:
   reprocessRequest: 0
   repositories:
