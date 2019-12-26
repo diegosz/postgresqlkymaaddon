@@ -462,3 +462,5 @@ metrics:
 
 service:
   type: LoadBalancer
+
+fullnameOverride: myPGCluster
