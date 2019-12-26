@@ -1,0 +1,11 @@
+apiVersion: addons.kyma-project.io/v1alpha1
+kind: ClusterAddonsConfiguration
+metadata:
+  name: psql
+  finalizers:
+    - addons.kyma-project.io
+spec:
+  reprocessRequest: 0
+  repositories:
+    # Git HTTPS protocol with a path to index.yaml
+    - url: "git::https://github.com/martinadolfi/postgresqlkymaaddon.git//index.yaml"
