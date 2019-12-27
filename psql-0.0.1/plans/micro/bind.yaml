@@ -6,5 +6,5 @@ credential:
   - name: POSTGRES_ADMIN_PASSWORD
     valueFrom:
       secretKeyRef:
-        name: {{ template "postgresql.secretName" . }}
+        name: mypgcluster
         jsonpath: '{.data.postgresql-password}'
