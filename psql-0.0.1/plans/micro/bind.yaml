@@ -3,8 +3,8 @@ credential:
     value: {{ template "postgresql.fullname" . }}.{{ .Release.Namespace }}.svc.cluster.local
   - name: PORT
     value: {{ template "postgresql.port" . }}
-  - name: POSTGRES_ADMIN_PASSWORD
-    valueFrom:
-      secretKeyRef:
-        name: mypgcluster
-        jsonpath: '{.data.postgresql-password}'
+  # - name: POSTGRES_ADMIN_PASSWORD
+  #   valueFrom:
+  #     secretKeyRef:
+  #       name: mypgcluster
+  #       jsonpath: '{.data.postgresql-password}'
