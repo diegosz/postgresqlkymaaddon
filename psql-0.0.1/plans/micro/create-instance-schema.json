@@ -7,6 +7,12 @@
       "enum": ["Always", "IfNotPresent", "Never"],
       "default": "IfNotPresent",
       "title": "Image pull policy"
+    },
+    "testProperty":{
+      "type": "string",
+      "enum": ["value1","value2","value3"],
+      "default": "value2",
+      "title": "TestProperty"
     }
   }
 }
