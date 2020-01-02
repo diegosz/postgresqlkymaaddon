@@ -7,4 +7,4 @@ credential:
     valueFrom:
       secretKeyRef:
         name: mypgcluster
-        jsonpath: postgresql-password
+        key: postgresql-password
