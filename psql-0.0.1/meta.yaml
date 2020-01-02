@@ -7,4 +7,4 @@ displayName: "[Experimental] Postgres"
 tags: database
 providerDisplayName: martinadolfi
 longDescription: "[Experimental] Posgres, no uses esto en produccion"
-bindable: false
+bindable: true
